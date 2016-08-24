@@ -1,0 +1,18 @@
+language: cpp
+compiler: gcc
+sudo: required
+
+install:
+  - sudo add-apt-repository ppa:ubuntu-toolchain-r/test --yes
+  - sudo apt-get update -qq 
+  - sudo apt-get install -qq libstdc++6-4.7-dev  
+  - ./install_oclint.sh
+
+script: 
+  - ./build.sh
+  - ./do_oclint.sh
+  - ./travis_qmake_gcc_cpp98_oclint
+
+after_success:
+  - cat log_correct.txt
+  - cat log_incorrect.txt
