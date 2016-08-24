@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main()
-{
+void f() noexcept {
   std::cout << "Hello world\n";
 }
+
+int main() { f(); }
