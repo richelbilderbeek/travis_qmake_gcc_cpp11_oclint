@@ -2,10 +2,13 @@ language: cpp
 compiler: gcc
 sudo: required
 
+before_install:
+  - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
+  - sudo apt-get update -qq
+
 install:
-  - sudo add-apt-repository ppa:ubuntu-toolchain-r/test --yes
-  - sudo apt-get update -qq 
-  - sudo apt-get install -qq libstdc++6-4.7-dev  
+  - sudo apt-get install -qq g++-5 # C++11
+  - sudo apt-get install -qq libstdc++6-4.7-dev # OCLint
   - ./install_oclint.sh
 
 script: 
