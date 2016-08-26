@@ -17,5 +17,7 @@ script:
   - ./travis_qmake_gcc_cpp11_oclint
 
 after_success:
-  - cat log_correct.txt
-  - cat log_incorrect.txt
+  - cat oclint.log
+
+after_failure:
+  - cat oclint.log
