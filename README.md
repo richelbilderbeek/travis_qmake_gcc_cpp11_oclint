@@ -1,8 +1,9 @@
 # travis_qmake_gcc_cpp11_oclint
 
-[![Travis CI logo](TravisCI.png)](https://travis-ci.org)
-
-[![Build Status](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp11_oclint.svg?branch=master)](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp11_oclint)
+Branch|[![Travis CI logo](TravisCI.png)](https://travis-ci.org)
+---|---
+master|[![Build Status](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp11_oclint.svg?branch=master)](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp11_oclint)
+develop|[![Build Status](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp11_oclint.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp11_oclint)
 
 Minimal C++ project that is checked by OCLint and checked by Travis.
 
