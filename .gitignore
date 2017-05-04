@@ -39,3 +39,4 @@ travis_oclint
 oclint-*
 log_*
 travis_qmake_gcc_cpp11_oclint
+oclint.log
