@@ -1,14 +1,10 @@
 language: cpp
+dist: bionic
 compiler: gcc
-sudo: required
 
-before_install:
-  - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
-  - sudo apt-get update -qq
-
-install:
-  - sudo apt-get install -qq g++-5 # C++11
-  - sudo apt-get install -qq libstdc++6-4.7-dev # OCLint
+install: 
+  - sudo apt update -qq
+  # OCLint
   - ./install_oclint.sh
 
 script: 
