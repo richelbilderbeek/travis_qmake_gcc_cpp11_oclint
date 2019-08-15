@@ -1,6 +1,6 @@
 language: cpp
+dist: bionic
 compiler: gcc
-sudo: required
 
 install: 
   - sudo apt update -qq
